@@ -4,25 +4,32 @@
 import os
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+
+# 1. Standard Django definition
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Static files (CSS, JavaScript, Images)
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "Static"),
-]
-
-DEBUG = True  # Enable debug mode for development
-# Other existing settings...
+# 2. Force an absolute path string to the root folder
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__)) # Nextify/Nextify folder
+SITE_ROOT = os.path.dirname(PROJECT_ROOT)                  # Actual project root folder
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # Change 'templates' here to match whatever your folder is named exactly
-        'DIRS': [BASE_DIR / 'templates'], 
+        'DIRS': [
+            # This covers all bases: path objects, relative joins, and explicit server roots
+            BASE_DIR / 'templates',
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(SITE_ROOT, 'templates'), 
+        ],
         'APP_DIRS': True,
-        ...
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
     },
 ]
 
