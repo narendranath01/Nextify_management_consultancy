@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - Nextify Management Consultant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+      :root { --primary-color: #0d3b66; --secondary-color: #ee6c4d; --accent-color: #3da9fc; --light-accent: #7fc9ff; --text-color: #2d3748; --gradient-primary: linear-gradient(135deg, #0d3b66 0%, #3da9fc 100%); }
+      body { margin:0; padding:0; font-family:'Poppins',sans-serif; background:#f8fafc; color:var(--text-color); line-height:1.6; }
+      .navbar { background:var(--gradient-primary); box-shadow:0 4px 20px rgba(13,59,102,0.15); padding:0.8rem 1rem; }
+      .navbar-brand img { height:45px; width:auto; border-radius:12px; border:2px solid rgba(255,255,255,0.9); }
+      .navbar-nav .nav-link { color:rgba(255,255,255,0.9)!important; padding:0.6rem 1rem; font-weight:500; border-radius:8px; transition:all 0.3s ease; }
+      .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active { color:white!important; background:rgba(255,255,255,0.15); }
+      .dropdown-menu { background:#fff; border:none; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.1); padding:0.5rem; }
+      .dropdown-item { color:var(--text-color)!important; padding:0.7rem 1rem; border-radius:8px; font-weight:500; transition:all 0.2s ease; }
+      .dropdown-item:hover { background:var(--accent-color); color:white!important; transform:translateX(5px); }
+      .footer { background:var(--gradient-primary); color:white; padding:3rem 0 1.5rem; }
+      .footer h5 { color:white; margin-bottom:1.5rem; font-weight:600; display:inline-block; }
+      .footer h5:after { content:''; display:block; width:40px; height:3px; background:var(--secondary-color); margin-top:8px; border-radius:2px; }
+      .footer a { color:rgba(255,255,255,0.8); text-decoration:none; }
+      .footer a:hover { color:white; }
+      .footer ul li { margin-bottom:0.7rem; }
+      .footer ul li i { margin-right:10px; color:var(--light-accent); }
+      .social-links a { display:inline-flex; align-items:center; justify-content:center; width:45px; height:45px; background:rgba(255,255,255,0.1); border-radius:50%; margin-right:1rem; transition:all 0.3s ease; }
+      .social-links a:hover { background:var(--secondary-color); transform:translateY(-5px); }
+      .blinking-text { animation:blink 2s infinite; }
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.7} }
+      .btn-outline-light { height:40px; border-radius:10px; font-weight:500; border:1px solid rgba(255,255,255,0.5); color:white; }
+      .btn-outline-light:hover { background:var(--secondary-color); border-color:var(--secondary-color); }
+      .form-control { height:40px; border-radius:10px; border:1px solid rgba(255,255,255,0.3); background:rgba(255,255,255,0.15); color:white; font-weight:500; }
+      .form-control::placeholder { color:rgba(255,255,255,0.7); }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="NMC Logo" style="height:45px; border-radius:100%;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+              <li class="nav-item"><a class="nav-link active" href="About.html"><i class="fas fa-info-circle"></i> About</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-cogs"></i> Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="businessanalytics.html"> Business Analytics</a></li>
+                  <li><a class="dropdown-item" href="financeanalytics.html"> Finance Analytics</a></li>
+                  <li><a class="dropdown-item" href="marketanalytics.html"> Market Analytics</a></li>
+                  <li><a class="dropdown-item" href="MarketResearch.html"> Market Research</a></li>
+                  <li><a class="dropdown-item" href="Seo.html"> SEO Solutions</a></li>
+                  <li><a class="dropdown-item" href="managementconsulting.html"> Management Consulting</a></li>
+                  <li><a class="dropdown-item" href="orgdevelopment.html"> Organizational Development</a></li>
+                  <li><a class="dropdown-item" href="RiskManagement.html"> Risk Management</a></li>
+                  <li><a class="dropdown-item" href="StrategicPlanning.html"> Strategic Planning</a></li>
+                  <li><a class="dropdown-item" href="ChangeManagement.html"> Change Management</a></li>
+                  <li><a class="dropdown-item" href="others.html"> Other Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="ContactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search">
+              <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+              <a class="btn btn-outline-light ms-2" href="#"><i class="fas fa-sign-in-alt"></i></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- About Section -->
+      <section class="py-5 bg-light" style="margin-top:70px;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <img src="../images/pr5.png" alt="About Us" class="img-fluid rounded shadow-lg" style="height:50vh; object-fit:cover;">
+            </div>
+            <div class="col-md-6">
+              <h1 class="display-4 mb-4">About Nextify Management Consultant</h1>
+              <p class="lead text-muted">Navigating Tomorrow, Today</p>
+              <p class="text-muted">Nextify Management Consultant is a leading consultancy firm dedicated to helping businesses thrive in today's dynamic market landscape. Our team of experts brings a wealth of experience across various industries, providing tailored solutions to meet your unique needs.</p>
+              <a href="ContactUs.html" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why Choose Us -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Why Choose Us?</h2>
+          <div class="row">
+            <div class="col-md-3 text-center mb-4">
+              <div class="card h-100 p-4 shadow-sm border-0">
+                <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                <h5>Data-Driven Insights</h5>
+                <p class="text-muted">We leverage advanced analytics to provide actionable insights for your business.</p>
+              </div>
+            </div>
+            <div class="col-md-3 text-center mb-4">
+              <div class="card h-100 p-4 shadow-sm border-0">
+                <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                <h5>Expert Team</h5>
+                <p class="text-muted">Our consultants bring years of industry experience and expertise.</p>
+              </div>
+            </div>
+            <div class="col-md-3 text-center mb-4">
+              <div class="card h-100 p-4 shadow-sm border-0">
+                <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                <h5>Innovative Solutions</h5>
+                <p class="text-muted">We develop creative strategies to help your business stay ahead.</p>
+              </div>
+            </div>
+            <div class="col-md-3 text-center mb-4">
+              <div class="card h-100 p-4 shadow-sm border-0">
+                <i class="fas fa-handshake fa-3x text-primary mb-3"></i>
+                <h5>Client-Centric Approach</h5>
+                <p class="text-muted">Your success is our top priority in every engagement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Mission -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2 class="display-5 mb-4">Our Mission</h2>
+              <p class="lead text-muted">Empowering Businesses to Succeed</p>
+              <p class="text-muted">At Nextify, our mission is to empower businesses with the tools, strategies, and insights they need to succeed in a rapidly changing world.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="../images/pr4.png" alt="Our Mission" class="img-fluid rounded shadow-lg" style="height:50vh; object-fit:cover;">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Core Values -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Our Core Values</h2>
+          <div class="row">
+            <div class="col-md-4 text-center mb-4">
+              <div class="card h-100 p-4 shadow-sm border-0">
+                <i class="fas fa-balance-scale fa-3x text-primary mb-3"></i>
+                <h5>Integrity</h5>
+                <p class="text-muted">We uphold the highest standards of honesty and transparency.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+              <div class="card h-100 p-4 shadow-sm border-0">
+                <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                <h5>Innovation</h5>
+                <p class="text-muted">We embrace creativity and innovation to deliver cutting-edge solutions.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+              <div class="card h-100 p-4 shadow-sm border-0">
+                <i class="fas fa-award fa-3x text-primary mb-3"></i>
+                <h5>Excellence</h5>
+                <p class="text-muted">We strive for excellence in everything we do.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5><i class="fas fa-link"></i> Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+              <li><a href="About.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+              <li><a href="ContactUs.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5><i class="fas fa-envelope"></i> Contact Info</h5>
+            <p><i class="fas fa-envelope"></i> Email: nextifymanagementconsultancy@gmail.com<br><i class="fas fa-phone"></i> Phone: +91 8112771957</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5><i class="fas fa-share-alt"></i> Follow Us</h5>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-light">
+        <p class="mb-0 text-center blinking-text">&copy; 2025 Nextify Management Consultant. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+

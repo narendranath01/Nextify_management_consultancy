@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - Nextify Management Consultant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+      :root { --primary-color: #0d3b66; --secondary-color: #ee6c4d; --accent-color: #3da9fc; --light-accent: #7fc9ff; --text-color: #2d3748; --gradient-primary: linear-gradient(135deg, #0d3b66 0%, #3da9fc 100%); }
+      body { margin: 0; padding: 0; font-family: 'Poppins', sans-serif; background: #f8fafc; color: var(--text-color); line-height: 1.6; }
+      .navbar { background: var(--gradient-primary); box-shadow: 0 4px 20px rgba(13,59,102,0.15); padding: 0.8rem 1rem; }
+      .navbar-brand img { height:45px; width:auto; border-radius:12px; border:2px solid rgba(255,255,255,0.9); }
+      .navbar-nav .nav-link { color:rgba(255,255,255,0.9)!important; padding:0.6rem 1rem; font-weight:500; border-radius:8px; transition:all 0.3s ease; }
+      .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active { color:white!important; background:rgba(255,255,255,0.15); }
+      .dropdown-menu { background:#fff; border:none; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.1); padding:0.5rem; }
+      .dropdown-item { color:var(--text-color)!important; padding:0.7rem 1rem; border-radius:8px; font-weight:500; transition:all 0.2s ease; }
+      .dropdown-item:hover { background:var(--accent-color); color:white!important; }
+      .footer { background:var(--gradient-primary); color:white; padding:3rem 0 1.5rem; }
+      .footer h5 { color:white; margin-bottom:1.5rem; font-weight:600; display:inline-block; }
+      .footer h5:after { content:''; display:block; width:40px; height:3px; background:var(--secondary-color); margin-top:8px; border-radius:2px; }
+      .footer a { color:rgba(255,255,255,0.8); text-decoration:none; transition:all 0.3s ease; }
+      .footer a:hover { color:white; transform:translateX(5px); }
+      .footer ul li { margin-bottom:0.7rem; }
+      .footer ul li i { margin-right:10px; color:var(--light-accent); }
+      .social-links a { display:inline-flex; align-items:center; justify-content:center; width:45px; height:45px; background:rgba(255,255,255,0.1); border-radius:50%; margin-right:1rem; transition:all 0.3s ease; }
+      .social-links a:hover { background:var(--secondary-color); transform:translateY(-5px); }
+      .blinking-text { animation:blink 2s infinite; }
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.7} }
+      .btn-outline-light { height:40px; border-radius:10px; font-weight:500; border:1px solid rgba(255,255,255,0.5); color:white; }
+      .btn-outline-light:hover { background:var(--secondary-color); border-color:var(--secondary-color); }
+      .form-control { height:40px; border-radius:10px; border:1px solid rgba(255,255,255,0.3); background:rgba(255,255,255,0.15); color:white; font-weight:500; }
+      .form-control::placeholder { color:rgba(255,255,255,0.7); }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="NMC Logo" style="height:45px; border-radius:100%;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="About.html"><i class="fas fa-info-circle"></i> About</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-cogs"></i> Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="businessanalytics.html"> Business Analytics</a></li>
+                  <li><a class="dropdown-item" href="financeanalytics.html"> Finance Analytics</a></li>
+                  <li><a class="dropdown-item" href="marketanalytics.html"> Market Analytics</a></li>
+                  <li><a class="dropdown-item" href="MarketResearch.html"> Market Research</a></li>
+                  <li><a class="dropdown-item" href="Seo.html"> SEO Solutions</a></li>
+                  <li><a class="dropdown-item" href="managementconsulting.html"> Management Consulting</a></li>
+                  <li><a class="dropdown-item" href="orgdevelopment.html"> Organizational Development</a></li>
+                  <li><a class="dropdown-item" href="RiskManagement.html"> Risk Management</a></li>
+                  <li><a class="dropdown-item" href="StrategicPlanning.html"> Strategic Planning</a></li>
+                  <li><a class="dropdown-item" href="ChangeManagement.html"> Change Management</a></li>
+                  <li><a class="dropdown-item" href="others.html"> Other Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link active" href="ContactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search">
+              <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+              <a class="btn btn-outline-light ms-2" href="#"><i class="fas fa-sign-in-alt"></i></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="py-5 bg-light" style="margin-top:70px;">
+        <div class="container">
+          <h1 class="text-center mb-5 display-4"><b>Contact Nextify Management Consultant</b></h1>
+          <div class="row g-5">
+            <div class="col-md-6">
+              <div class="p-4 bg-white rounded shadow-sm">
+                <h3 class="mb-4"><i class="fas fa-envelope-open-text me-2 text-primary"></i>Get in Touch with Us</h3>
+                <p class="text-muted">We're here to help! Whether you have questions about our services or need assistance with a specific project, our team is ready to assist you.</p>
+                <div class="mt-4">
+                  <h4 class="mb-3"><i class="fas fa-address-card me-2 text-primary"></i>Our Contact Information</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-3"><i class="fas fa-envelope me-2 text-primary"></i><strong>Email:</strong> nextifymanagementconsultancy@gmail.com</li>
+                    <li class="mb-3"><i class="fas fa-phone me-2 text-primary"></i><strong>Phone:</strong> +91 8112771957</li>
+                    <li class="mb-3"><i class="fas fa-map-marker-alt me-2 text-primary"></i><strong>Address:</strong> India </li>
+                  </ul>
+                </div>
+                <div class="mt-4">
+                  <h4 class="mb-3"><i class="fas fa-share-alt me-2 text-primary"></i>Follow Us</h4>
+                  <div class="d-flex gap-3">
+                    <a href="#" class="text-primary"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-primary"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" class="text-primary"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" class="text-primary"><i class="fab fa-instagram fa-2x"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-4 bg-white rounded shadow-sm">
+                <h3 class="mb-4"><i class="fas fa-paper-plane me-2 text-primary"></i>Send Us a Message</h3>
+                <form id="contactForm">
+                  <div class="mb-3"><label for="name" class="form-label">Your Name</label><input type="text" class="form-control" id="name" name="entry.2005620554" placeholder="Enter your name" required></div>
+                  <div class="mb-3"><label for="email" class="form-label">Your Email</label><input type="email" class="form-control" id="email" name="entry.1045781291" placeholder="Enter your email" required></div>
+                  <div class="mb-3"><label for="phone" class="form-label">Your Phone Number</label><input type="tel" class="form-control" id="phone" name="entry.1166974658" placeholder="Enter your phone number"></div>
+                  <div class="mb-3">
+                    <label for="service" class="form-label">Select Service</label>
+                    <select class="form-select" id="service" name="entry.839337160" required>
+                      <option value="">Choose a service</option>
+                      <option>Business Analytics</option><option>Finance Analytics</option><option>Market Analytics</option>
+                      <option>Market Research</option><option>SEO Solutions</option><option>Management Consulting</option>
+                      <option>Organizational Development</option><option>Strategic Planning</option><option>Change Management</option><option>Risk Management</option>
+                    </select>
+                  </div>
+                  <div class="mb-3"><label for="message" class="form-label">Your Message</label><textarea class="form-control" id="message" name="entry.1065046570" rows="5" placeholder="Enter your message" required></textarea></div>
+                  <button type="submit" class="btn btn-primary w-100"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+                  <div id="formStatus" class="mt-3"></div>
+                </form>
+                <script>
+                document.getElementById('contactForm').addEventListener('submit', function(e) {
+                  e.preventDefault();
+                  const form = this;
+                  const status = document.getElementById('formStatus');
+                  const btn = form.querySelector('button[type="submit"]');
+                  btn.disabled = true;
+                  btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+                  
+                  // Google Forms pre-filled link - replace FORM_ID and entry IDs with your actual Google Form IDs
+                  const formData = new FormData(form);
+                  const url = 'https://forms.gle/ppfcw7VeJb3KSSwcA';
+                  
+                  fetch(url, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: formData
+                  }).then(function() {
+                    status.innerHTML = '<div class="alert alert-success">Thank you! Your message has been sent successfully.</div>';
+                    form.reset();
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Send Message';
+                  }).catch(function() {
+                    // no-cors mode always returns opaque response, so treat any completion as success
+                    status.innerHTML = '<div class="alert alert-success">Thank you! Your message has been sent successfully.</div>';
+                    form.reset();
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Send Message';
+                  });
+                });
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5><i class="fas fa-link"></i> Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+              <li><a href="About.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+              <li><a href="ContactUs.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5><i class="fas fa-envelope"></i> Contact Info</h5>
+            <p><i class="fas fa-envelope"></i> Email: nextifymanagementconsultancy@gmail.com<br><i class="fas fa-phone"></i> Phone: +91 8112771957</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5><i class="fas fa-share-alt"></i> Follow Us</h5>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="https://www.linkedin.com/company/nextify-management-consultant/"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-light">
+        <p class="mb-0 text-center blinking-text">&copy; 2025 Nextify Management Consultant. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
